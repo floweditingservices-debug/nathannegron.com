@@ -145,6 +145,7 @@ h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0;text-w
 .logo img{height:28px;width:auto;filter:grayscale(1);opacity:.6;transition:filter .3s,opacity .3s}
 .logo:hover img{filter:none;opacity:1}
 .logo img{height:22px}
+a.logo{text-decoration:none;cursor:pointer}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .logo img{filter:grayscale(1) invert(1)}:root:not([data-theme="light"]) .logo:hover img{filter:invert(1)}}
 .logo{height:auto;padding:14px 22px;border:1px solid var(--line);border-radius:14px;background:var(--surface);transition:border-color .3s,transform .3s var(--ease)}
 .logo:hover{border-color:var(--text);transform:translateY(-2px)}
@@ -400,9 +401,9 @@ footer a{color:var(--muted)}
         <h2 class="section-title reveal">Brands I've made content for</h2>
         <div class="logos">
           <!-- Add logo files to assets/logos; names show until they exist -->
-          <div class="logo reveal"><img src="assets/logos/perspective.svg" alt="Perspective" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Perspective</span></div>
-          <div class="logo reveal" style="--d:70ms"><img src="assets/logos/captions.svg" alt="Captions" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Captions</span></div>
-          <div class="logo reveal" style="--d:140ms"><img src="assets/logos/neutonic.svg" alt="Neutonic" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Neutonic</span></div>
+          <a class="logo reveal" href="https://www.perspective.co/" target="_blank" rel="noopener" aria-label="Visit perspective"><img src="assets/logos/perspective.svg" alt="Perspective" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Perspective</span></a>
+          <a class="logo reveal" style="--d:70ms" href="https://www.captions.ai/" target="_blank" rel="noopener" aria-label="Visit captions"><img src="assets/logos/captions.svg" alt="Captions" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Captions</span></a>
+          <a class="logo reveal" style="--d:140ms" href="https://www.neutonic.com/" target="_blank" rel="noopener" aria-label="Visit neutonic"><img src="assets/logos/neutonic.svg" alt="Neutonic" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Neutonic</span></a>
           <div class="logo reveal" style="--d:210ms"><img src="assets/logos/saphire-media.svg" alt="Saphire Media" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Saphire Media</span></div>
           <div class="logo reveal" style="--d:280ms"><img src="assets/logos/sound-campaigns.svg" alt="Sound Campaigns" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="name">Sound Campaigns</span></div>
         </div>
