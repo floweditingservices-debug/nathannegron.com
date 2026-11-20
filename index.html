@@ -198,6 +198,10 @@ h1,h2,h3{font-weight:700;letter-spacing:-.025em;line-height:1.05;margin:0;text-w
 .case p{margin:0;color:var(--muted);font-size:15px}
 .shot{display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--surface-2);cursor:zoom-in;aspect-ratio:16/10;position:relative}
 .shot img{width:100%;height:100%;object-fit:cover}
+.shot.has-img{aspect-ratio:auto;background:#fff}
+.shot.has-img img{height:auto;display:block;object-fit:contain}
+.case-link{display:inline-block;margin-top:var(--s3);font-size:15px;color:var(--accent,#0071e3);text-decoration:none}
+.case-link:hover{text-decoration:underline}
 .shot .missing{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted);padding:var(--s2);text-align:center}
 .shot.has-img .missing{display:none}
 
@@ -435,30 +439,29 @@ footer a{color:var(--muted)}
     <div class="panel" id="results" role="tabpanel" aria-labelledby="tab-results" tabindex="0" hidden>
       <p class="cases-label">Campaigns I scripted and ran</p>
       <h2 class="section-title">Marketing &amp; ad results</h2>
-      <p class="muted" style="max-width:60ch;margin:0 0 var(--s5)">Results from client ad campaigns and content strategies I scripted and ran, outside tech. Clients are anonymized and screenshots are blurred.</p>
+      <p class="muted" style="max-width:60ch;margin:0 0 var(--s3)">Every piece of content behind these results was researched, planned, shot and edited by me. These are local-service and automotive clients, a different vertical from tech, but the skill is the same: a hook that stops the scroll, a script that holds attention and an edit built to be tested.</p>
+      <p class="muted" style="max-width:60ch;margin:0 0 var(--s5)">Clients are anonymized and names in the screenshots are blurred.</p>
       <div class="cases">
         <article class="case reveal">
           <span class="tag">Meta lead ads</span>
           <h3>Local auto dealer</h3>
-          <div class="nums"><div><b>300+</b><span>leads in 4 months</span></div><div><b>9–15x</b><span>ROAS</span></div></div>
-          <p>Scripted owner-led ads, tested hooks and ran the campaigns end to end.</p>
-          <button class="shot" data-full="assets/img/case-auto-dealer.jpg" aria-label="View blurred Ads Manager screenshot for the auto dealer campaign"><img src="assets/img/case-auto-dealer.jpg" alt="Blurred Ads Manager results for the auto dealer campaign" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="missing">Screenshot slot · client name blurred</span></button>
+          <div class="nums"><div><b>850+</b><span>leads generated</span></div><div><b>4</b><span>lead campaigns</span></div></div>
+          <p>Researched, scripted, shot and edited the ads, tested hooks and ran the campaigns end to end.</p>
+          <button class="shot" data-full="assets/img/case-auto-dealer.jpg" aria-label="View blurred Ads Manager screenshot for the auto dealer campaigns"><img src="assets/img/case-auto-dealer.jpg" alt="Blurred Ads Manager results for the auto dealer campaign" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="missing">Screenshot loading…</span></button>
         </article>
         <article class="case reveal">
           <span class="tag">Organic content</span>
           <h3>Content across clients</h3>
-          <!-- TODO: fill -->
-          <div class="nums"><div><b>20M+</b><span>organic views</span></div><div><b>[X]</b><span>clients</span></div></div>
-          <p>Full content strategy: concepts, scripts, shoots and edits.</p>
-          <button class="shot" data-full="assets/img/case-organic.jpg" aria-label="View organic content screenshot"><img src="assets/img/case-organic.jpg" alt="Blurred Instagram insights across client accounts" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="missing">Screenshot slot · client names blurred</span></button>
+          <div class="nums"><div><b>20M+</b><span>organic views</span></div><div><b>20+</b><span>clients</span></div></div>
+          <p>Full content strategy: concepts, scripts, shoots and edits, all done by me.</p>
+          <a class="case-link" href="https://www.instagram.com/officialnathannegron/" target="_blank" rel="noopener">See the content on Instagram →</a>
         </article>
         <article class="case reveal">
-          <span class="tag">Meta ads · last 12 months</span>
+          <span class="tag">Meta ads · all time</span>
           <h3>Campaign totals</h3>
-          <!-- TODO: fill -->
-          <div class="nums"><div><b>[X,XXX]</b><span>leads generated</span></div><div><b>$[XX]</b><span>avg. cost per lead</span></div></div>
+          <div class="nums"><div><b>1,500+</b><span>leads generated</span></div><div><b>6</b><span>client ad accounts</span></div></div>
           <p>Anonymized totals across local-business ad accounts.</p>
-          <button class="shot" data-full="assets/img/case-meta-totals.jpg" aria-label="View Meta ads totals screenshot"><img src="assets/img/case-meta-totals.jpg" alt="Blurred Ads Manager 12-month summary" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="missing">Screenshot slot · account names blurred</span></button>
+          <button class="shot" data-full="assets/img/case-meta-totals.jpg" aria-label="View Meta ads totals screenshot"><img src="assets/img/case-meta-totals.jpg" alt="Blurred Ads Manager results across client ad accounts" loading="lazy" onload="this.parentNode.classList.add('has-img')" onerror="this.remove()"><span class="missing">Screenshot loading…</span></button>
         </article>
         <article class="case reveal">
           <span class="tag">My channel</span>
